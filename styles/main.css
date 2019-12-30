@@ -1,0 +1,29 @@
+		h1, h2 {
+					color: blue;
+					font-weight: bold;
+					text-align: center;
+		}
+		body{
+			     background-color: lightgray;
+		    }
+
+		.past {
+						color: green;
+					}
+		.present {
+							  color: blue;
+						 }
+		.future {
+				 			  color: red;
+				 		}
+		p, ol{
+			font-family: Tahoma;
+			font-size: 20px;
+		}
+		.photo{
+			text-align: center;
+		}
+		img{
+			width: 300px;
+			margin-right: 8px;
+		}
