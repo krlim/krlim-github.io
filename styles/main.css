@@ -27,3 +27,11 @@
 			width: 300px;
 			margin-right: 8px;
 		}
+		.first{
+			color: darkred;
+			background-color: lightgray;
+		}
+		.second{
+			color: darkred;
+			background-color: lightgray;
+		}
