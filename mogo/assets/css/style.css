@@ -39,14 +39,23 @@ h1,h2,h3,h4{
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+  text-align: center;
 }
 .intro_title{
   font-size: 150px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  text-align: center;
   line-height: 1;
+  margin-bottom: 20px;
+}
+.intro_title:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 60px auto;
 }
 .intro__suptitle{
   font-family: 'Kaushan Script', cursive;
@@ -106,4 +115,24 @@ h1,h2,h3,h4{
 }
 .nav a:hover:after{
   opacity: 1;
+}
+
+/*Button*/
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  border: 3px solid #fff;
+  padding: 8px 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .1s linear,
+  color .1s linear;
+}
+.btn:hover{
+  background-color: #fff;
+  color: #333;
+
 }
