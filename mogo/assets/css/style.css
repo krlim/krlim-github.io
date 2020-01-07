@@ -64,6 +64,22 @@ h1,h2,h3,h4{
   text-align: center;
 }
 
+/*Slider*/
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+.slider__item{
+  width: 24%;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.slider__num{
+  font-size: 24px;
+  font-weight: 700;
+
+}
 
 /*Header*/
 .header{
