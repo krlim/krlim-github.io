@@ -66,14 +66,41 @@ h1,h2,h3,h4{
 
 /*Slider*/
 .slider {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.slider__inner{
   display: flex;
   justify-content: space-between;
 }
 .slider__item{
-  width: 24%;
+  width: 23%;
   font-size: 18px;
+  position: relative;
   color: #fff;
   text-transform: uppercase;
+  padding: 15px 0;
+  border-top: 3px solid #fff;
+
+  opacity: .6;
+}
+.slider__item.active{
+  opacity: 1;
+}
+.slider__item.active:before{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f38181;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  z-index: 1;
+
 }
 .slider__num{
   font-size: 24px;
@@ -126,10 +153,10 @@ h1,h2,h3,h4{
   opacity: 0;
   transition: opacity .2s linear;
 }
-.nav a:hover{
+.nav a:hover, .nav a.active{
   color: #fce38a;
 }
-.nav a:hover:after{
+.nav a:hover:after, .nav a.active:after{
   opacity: 1;
 }
 
