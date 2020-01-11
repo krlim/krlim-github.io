@@ -221,6 +221,7 @@ h1,h2,h3,h4{
 .about__item{
   width: 380px;
   background-color: #95e1d3;
+  position: relative;
 }
 .about__item:hover .about__img{
    transform: translate3d(-10px,-10px,0);
@@ -237,4 +238,24 @@ h1,h2,h3,h4{
 .about__img img{
   display: block;
   transition: opacity .1s linear;
+}
+.about__text {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0,-50%,0);
+
+  transition: opacity .2s linear;
+
+}
+.about__item:hover .about__text{
+  opacity: 1;
 }
