@@ -800,3 +800,29 @@ hr {
     margin: 15px auto 0;
 }
 
+
+/* Footer */
+.footer{
+    padding-top: 75px;
+    background-color: #f8f8f8;
+}
+.footer__col{
+    width: 100%;
+    max-width: 37%;
+}
+.footer__logo{
+    font-size: 46px;
+    font-weight: 700;
+    color: #ccc;
+}
+.footer__text{
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+}
+.footer__ico{
+    margin-left: 17px;
+    color: #95e1d3;
+}
+
