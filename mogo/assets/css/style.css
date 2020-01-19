@@ -806,9 +806,22 @@ hr {
     padding-top: 75px;
     background-color: #f8f8f8;
 }
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
 .footer__col{
-    width: 100%;
-    max-width: 37%;
+
+}
+.footer__col-first{
+    width: 40%;
+}
+.footer__col-second{
+    width: 29%;
+}
+.footer__col-third{
+    width: 22%;
 }
 .footer__logo{
     font-size: 46px;
@@ -821,8 +834,80 @@ hr {
     font-size: 15px;
     color: #999;
 }
-.footer__ico{
-    margin-left: 17px;
+.footer__social-header{
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer__social-content{
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+}
+.footer__social-content a {
+    font-size: 18px;
     color: #95e1d3;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.footer__social-header b{
+    font-size: 18px;
+}
+.footer__social{
+    margin-bottom: 25px;
 }
 
+/*Subscribe*/
+.subscribe{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+}
+.subscribe__input{
+    height: 40px;
+    width: 60%;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid  #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.1;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333;
+}
+.subscribe__input::placeholder{
+    color: #ccc
+}
+.subscribe__input:focus{
+    outline: 0;
+    border-color: #95e1d3;
+}
+
+.subscribe__btn{
+    border-right: 0;
+    padding: 12px 30px;
+    width: 40%;
+    height: 40px;
+    background-color: #95e1d3;
+    border: 0;
+    line-height: 1.1;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background .2s linear;
+}
+.subscribe__btn:hover{
+    background-color: #39a591;
+}
+.subscribe__btn:focus{
+    outline: 0;
+}
