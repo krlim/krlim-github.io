@@ -4,7 +4,7 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    color: #fff;
+    -webkit-font-smoothing: antialiased;
     background-color: #fff;
 }
 *,
@@ -71,6 +71,8 @@ h1,h2,h3,h4,h5,h6{
 
     height: 750px;
     padding-top: 100px;
+    color: #fff;
+
     background: #31344e url("../img/intro-bg.jpg") center no-repeat;
     background-size: cover;
 }
@@ -78,15 +80,45 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     max-width: 970px;
     margin: 0 auto;
+    text-align: center;
 }
 .intro__title{
+    margin: 0 0 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 65px;
+    line-height: 1.1;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
 }
 
 .intro__subtitle{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
 
+/* Button */
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background .2s linear;
+
+}
+.btn--red{
+    background-color: #e84545;
+}
+.btn:hover{
+    background-color: #c12020;
 }
