@@ -68,7 +68,6 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     height: 750px;
     padding-top: 100px;
-    margin-bottom: 120px;
     color: #fff;
     background: #31344e url("../img/intro-bg.jpg") center no-repeat;
     background-size: cover;
@@ -117,13 +116,14 @@ h1,h2,h3,h4,h5,h6{
     background-color: #e84545;
 }
 .btn:hover{
-    background-color: #cc4444;
+    background-color: #b42020;
 }
 
 /*Features*/
 .features{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 120px;
 }
 .features__item{
     text-align: center;
@@ -132,16 +132,15 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 75px;
     padding: 0 36px;
 }
-}
 .features__ico{
-
+    margin-bottom: 25px;
 }
 .features__title{
     font-size: 14px;
     color: #2d3033;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 32px 0 24px;
+    margin-bottom: 20px;
 }
 .features__text{
     font-size: 14px;
@@ -156,8 +155,16 @@ h1,h2,h3,h4,h5,h6{
 }
 .works__item{
     width: 100%;
+    height: 350px;
     max-width: 25%;
-    margin: 0;
-    padding: 0;
-    display: block;
+
+    position: relative;
+    overflow: hidden;
+}
+.works__photo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate3d(-50%,-50%,0);
 }
