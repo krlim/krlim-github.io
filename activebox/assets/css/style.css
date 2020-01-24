@@ -106,12 +106,16 @@ h1,h2,h3,h4,h5,h6{
     cursor: pointer;
     color: #fff;
     border-radius: 2px;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
     transition: background .2s linear;
 
+}
+.btn--long{
+    min-width: 280px;
 }
 .btn--red{
     background-color: #e84545;
@@ -242,6 +246,9 @@ h1,h2,h3,h4,h5,h6{
 .social{
     display: flex;
 }
+.social--footer{
+    justify-content: center;
+}
 .social__item{
     display: flex;
     justify-content: center;
@@ -252,8 +259,17 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 4px;
     transition: background .2s linear;
 }
+.social--footer .social__item{
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
 .social__item:hover{
     background-color: #696969;
+}
+.social--footer .social__item:hover{
+    background-color: #fff;
 }
 .social__icon{
     display: block;
@@ -261,8 +277,14 @@ h1,h2,h3,h4,h5,h6{
     fill: #e8ecee;
     transition: fill .2s linear;
 }
+.social--footer .social__icon{
+    fill: #fff;
+}
 .social__item:hover .social__icon{
     fill: #fff;
+}
+.social--footer .social__item:hover .social__icon{
+    fill: #000;
 }
 
 /*Testimonials*/
@@ -304,4 +326,74 @@ h1,h2,h3,h4,h5,h6{
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+/*download*/
+.download{
+    margin: 90px 0;
+    text-align: center;
+
+}
+.download__title{
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.download__text{
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+/* Footer */
+.footer{
+    background-color: #3a3e64;
+}
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+     padding: 70px 0;
+}
+.footer__block{
+    width: 33.3333%;
+    text-align: center;
+    padding: 0 15px;
+}
+.footer__title{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer__address{
+    color: rgba(255,255,255,.5);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer__text{
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.copyright{
+    background-color: #313454;
+    padding: 20px 0;
+}
+.copyright__text{
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.copyright__author{
+    color: #fff;
+}
+.copyright__heart{
+    color: #e84545;
 }
