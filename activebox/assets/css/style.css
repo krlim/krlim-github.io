@@ -441,6 +441,10 @@ h1,h2,h3,h4,h5,h6{
 .copyright__heart{
     color: #e84545;
 }
+
+
+
+
 /* Media */
 /*******************/
 @media (max-width: 1300px){
@@ -461,7 +465,17 @@ h1,h2,h3,h4,h5,h6{
 @media (max-width: 991px){
 /*Nav*/
     .nav{
-        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        right: 0;
+        top: 100%;
+        z-index: 2;
+        background-color: #31344e;
+    }
+    .nav__item{
+        padding: 10px 15px;
     }
 /*Burger*/
     .burger{
