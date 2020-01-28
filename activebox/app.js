@@ -3,6 +3,10 @@ $(function() {
     let intro = $("#intro");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
+
+
     checkScroll(scrollPos, introH);
 
     $(window).on("scroll load resize", function(){
@@ -34,12 +38,20 @@ $(function() {
     });
 
 //    Nav Toggle
-    let nav = $("#nav");
-    let navToggle = $("#navToggle");
     navToggle.on("click", function(event){
         event.preventDefault();
         nav.toggleClass("show");
     });
 
+//Reviews slick
+    let slider = $("#reviewsSlider");
+    slider.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      dots: true
+    });
 
 });
