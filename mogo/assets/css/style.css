@@ -783,14 +783,15 @@ hr {
 }
 
 .blog-stat__item{
-    display: inline-block;
-    vertical-align: middle;
     margin-right: 10px;
+    line-height: .5;
 }
 
 .blog-stat__item svg{
-    height: 20px;
-    width: 30px;
+    display: inline-block;
+    vertical-align: text-top;
+    height: 18px;
+    width: 22px;
     fill: #95e1d3;
 }
 
