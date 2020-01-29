@@ -221,7 +221,7 @@ hr {
 
 .section {
     padding: 80px 0;
-    text-align: center;
+
 }
 .section--devices {
     padding-bottom: 0;
@@ -245,19 +245,21 @@ hr {
     width: 100%;
     max-width: 950px;
     margin: 0 auto 50px;
-    text-align: center;
+
 }
 
 .section__suptitle {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color: #333;
+    text-align: center;
 }
 
 .section__title {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
     color: #333;
 }
 
@@ -779,13 +781,17 @@ hr {
     color: #999;
     font-style: italic;
 }
+
 .blog-stat__item{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     margin-right: 10px;
 }
-.blog-stat__item i{
-    color: #95e1d3;
+
+.blog-stat__item svg{
+    height: 20px;
+    width: 30px;
+    fill: #95e1d3;
 }
 
 /* Map */
