@@ -576,6 +576,9 @@ hr {
     justify-content: center;
 }
 .social__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 55px;
     height: 55px;
     padding: 10px;
@@ -595,6 +598,16 @@ hr {
     color: #fff;
 }
 
+
+.social__icon{
+    height: 30px;
+    width: 30px;
+    fill: #f38181;
+    transition: fill .2s linear;
+}
+.social__item:hover .social__icon{
+    fill: #fff;
+}
 /* logos */
 .logos{
     display: flex;
