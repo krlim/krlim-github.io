@@ -799,7 +799,14 @@ hr {
 .map{
     text-align: center;
 }
+.map__icon{
+    fill: #f38181;
+    height: 25px;
+    margin-bottom: 10px;
+}
 .map__title{
+    display: flex;
+    flex-direction: column;
     font-size: 24px;
     font-weight: 700;
     color: #f38181;
@@ -869,12 +876,16 @@ hr {
     color: #999;
     font-style: italic;
 }
-.footer__social-content a {
-    font-size: 18px;
-    color: #95e1d3;
+.footer__social-content a{
+    text-decoration: none;
+}
+.footer__icon{
+    width: 20px;
+    height: 20px;
+    fill: #95e1d3;
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px;
+    vertical-align: top;
+    margin-left: 10px;
 }
 .footer__social-header b{
     font-size: 18px;
