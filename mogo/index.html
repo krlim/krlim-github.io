@@ -145,12 +145,20 @@
     <div class="page">
         <header class="header">
             <div class="container">
-                <div class="headr_inner">
+                <div class="header__inner">
                     <div class="header__logo">MoGo</div>
-                    <nav class="nav"> <a href="#">About</a> <a href="#">Service</a> <a href="#">Blog</a> <a class="active" href="#">Work</a> <a href="#">Contact</a>
-                        <a href="#"><img src="assets/images/glass.png"></a>
-                        <a href="#"><img src="assets/images/shop.png"></a>
+                    <nav class="nav">
+                       <a class="nav__link" href="#">About</a>
+                       <a class="nav__link" href="#">Service</a>
+                       <a class="nav__link" href="#">Blog</a>
+                       <a class="nav__link active" href="#">Work</a>
+                       <a class="nav__link" href="#">Contact</a>
+                       <a class="nav__link" href="#"><img src="assets/images/glass.png"></a>
+                       <a class="nav__link" href="#"><img src="assets/images/shop.png"></a>
                     </nav>
+                    <button class="nav-toggle active" type="button">
+                       <span class="nav-toggle__item">Menu</span>
+                    </button>
                 </div>
             </div>
         </header>
@@ -161,29 +169,28 @@
                     <h1 class="intro__title">Welcome to mogo</h1>
                     <a class="btn" href="#footer">Learn more</a> </div>
             </div>
-        </div>
-        <div class="slider">
-            <div class="container">
-                <div class="slider__inner">
+            <div class="slider">
+                <div class="container">
+                    <div class="slider__inner">
 
 
-                    <div class="slider__item">
-                         <span class="slider__num">01</span> <span class="slider__text">intro</span>
+                        <div class="slider__item">
+                             <span class="slider__num">01</span> <span class="slider__text">intro</span>
+                        </div>
+                        <div class="slider__item">
+                            <span class="slider__num">02</span><span class="slider__text">work</span>
+                        </div>
+                        <div class="slider__item active">
+                            <span class="slider__num">03</span><span class="slider__text">about</span>
+                        </div>
+                        <div class="slider__item">
+                            <span class="slider__num">04</span><span class="slider__text">contacts</span>
+                        </div>
                     </div>
-                    <div class="slider__item">
-                        <span class="slider__num">02</span><span class="slider__text">work</span>
-                    </div>
-                    <div class="slider__item active">
-                        <span class="slider__num">03</span><span class="slider__text">about</span>
-                    </div>
-                    <div class="slider__item">
-                        <span class="slider__num">04</span><span class="slider__text">contacts</span>
-                    </div>
-
-
                 </div>
             </div>
         </div>
+
         <section class="section">
             <div class="container">
                 <div class="section__header">
@@ -876,6 +883,10 @@
 
         <div class="copyright">© 2016 MoGo free PSD template by <span>Laaqiq</span></div>
     </div> <!-- /.page -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
 
