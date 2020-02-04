@@ -150,6 +150,7 @@ hr {
     padding-top: 30px;
 }
 .header.fixed {
+    padding: 10px 0;
     background-color: #eb8b8d;
     position: fixed;
     top: 0;
@@ -1238,6 +1239,9 @@ hr {
         top: 100%;
         right: 0;
         background-color: #eb8b8d;
+    }
+    .nav.active {
+        display: block;
     }
     .nav__link {
         display: block;
