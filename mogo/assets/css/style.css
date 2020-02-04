@@ -612,6 +612,7 @@ hr {
 
 /* Reviews */
 .reviews{
+    min-height: 210px;
     padding: 0 100px;
     position: relative;
 }
