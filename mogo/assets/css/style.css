@@ -162,6 +162,7 @@ hr {
      background-color: #eb8b8d;
 }
 .header__logo {
+    cursor: pointer;
     font-size: 30px;
     font-weight: 700;
     color: #fff;
@@ -230,6 +231,9 @@ hr {
     top: 24 px;
     z-index: 1;
 }
+.nav-toggle:focus {
+    outline: 0;
+}
 .nav-toggle.active .nav-toggle__item{
     background: none;
 }
@@ -238,7 +242,7 @@ hr {
     width: 100%;
     height: 3px;
     background-color: #fff;
-    transition: background .3s linear;
+    transition: background .5s linear;
     position: absolute;
     top: 0;
     left: 0;
@@ -254,13 +258,15 @@ hr {
     background-color: #fff;
     position: absolute;
     left: 0;
-    transition: transform .3s linear;
+    transition: transform .5s linear;
 }
 .nav-toggle__item:before {
     top: -8px;
+    transform-origin: left top;
 }
 .nav-toggle__item:after {
     bottom: -8px;
+    transform-origin: left bottom;
 }
 .nav-toggle.active .nav-toggle__item:before{
     transform-origin: left top;
