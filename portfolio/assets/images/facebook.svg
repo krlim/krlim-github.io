@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
-  <g id="facebook" transform="translate(-189 -346)">
-    <rect id="bg" width="41" height="41" transform="translate(189 346)" fill="#3a5898"/>
-    <text id="facebook-2" data-name="facebook" transform="translate(202 376)" fill="#fff" font-size="23" font-family="FontAwesome"><tspan x="0" y="0"></tspan></text>
-  </g>
+<svg width="67" height="67" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="null" id="svg_1" fill-rule="evenodd" clip-rule="evenodd" fill="#3a5898" d="m28.755299,51.773188l7.550159,0l0,-18.271969l5.036798,0l0.667244,-6.296278l-5.704042,0l0.007837,-3.152617c0,-1.641242 0.156735,-2.522318 2.512242,-2.522318l3.148139,0l0,-6.297397l-5.037918,0c-6.051099,0 -8.180459,3.055217 -8.180459,8.191655l0,3.780678l-3.771721,0l0,6.297397l3.771721,0l0,18.270849zm-28.844878,-51.85585l67.172237,0l0,67.17224l-67.172237,0l0,-67.17224z"/>
+ </g>
 </svg>
