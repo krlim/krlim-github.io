@@ -9,6 +9,22 @@
 }
 .about__photo {
     width: 50%;
+    position: relative;
+    img {
+        position: relative;
+        z-index: 2;
+    }
+    &:before {
+        content: "";
+        width: 414px;
+        height: 414px;
+        background-color: #efefef;
+
+        position: absolute;
+        bottom: 0;
+        left: 1.5rem;
+        z-index: 1;
+    }
 }
 .about__content {
     width: 50%;
