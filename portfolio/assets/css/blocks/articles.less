@@ -4,7 +4,9 @@
     flex-wrap: wrap;
     margin : 0 -1.5rem;
 }
-
+.articles__item {
+    margin-bottom: 5rem;
+}
 .articles__col {
     width: 33.33333%;
     padding: 0 1.5rem;
@@ -15,6 +17,13 @@
     font-weight: 700;
     text-transform: uppercase;
     color: @black;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 .articles__cat {
     font-size: 1.2rem;
@@ -33,7 +42,9 @@
     position: relative;
     margin-bottom: 1.4rem;
 }
-
+.articles__content {
+    margin-bottom: 3rem;
+}
 .articles__date {
     display: flex;
     align-items: center;
