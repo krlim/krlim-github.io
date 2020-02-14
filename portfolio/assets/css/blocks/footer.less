@@ -3,13 +3,37 @@
     padding: 2rem 0;
     background-color: @black;
 }
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__credits {
+    display: flex;
+    align-items: center;
+}
+.footer__nav-link {
+    color: @gray-light;
+    text-decoration: none;
+}
+.footer__copyright {
+    font-size: 1.4rem;
+    color:#bbbbcc;
+    padding-right: 1.6rem;
+    border-right: 1px solid #3d3b3d;
+    margin-right: .7rem;
+}
+.footer__social {
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: none;
+        margin-right: .4rem;
+    }
+}
 .footer__icon {
-    fill : @gray-light;
+    fill : #bbbbcc;
     background-color: @black;
     width: 3.1rem;
     height: 3.1rem;
 }
-.footer__icon--inv {
-    fill : @black;
-    background-color: @gray-light;
-}
+
