@@ -19,6 +19,7 @@
 .modal-work__content {
     width: 35%;
     padding: 5rem 10rem 1.5rem 2.6rem;
+    position: relative;
 }
 .modal-work__header {
     margin-bottom: 3.3rem;
@@ -58,4 +59,25 @@
     color: @gray;
     font-weight: 300;
     line-height: 2;
+}
+.modal-work__footer {
+    width: 100%;
+    padding: 0 2.7rem 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+.modal-work__btn {
+    font-size: 1.4rem;
+    color: @black;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border : 0;
+    padding: 0;
+    background: none;
 }
