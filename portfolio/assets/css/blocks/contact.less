@@ -1,26 +1,29 @@
 // main: ../style.less
 .contact {
     display: flex;
+    background: url(https://www.fillmurray.com/477/700) right center no-repeat;
 }
 .contact__left {
     width: 47%;
-    padding: 2.8rem 3.2rem;
-}
-.contact__right {
-    width: 53%;
-    background: @black url(http:/placehold.it/480x700) center no-repeat;
+    padding: 3rem;
 }
 
 .contact__info {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: @black;
     list-style: none;
 }
 .contact__info-item {
     display: flex;
     align-items: center;
     margin-bottom: .5rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 .contact__icon {
     width: 12px;
     height: 12px;
-    margin-right: 1.6rem;
+    margin-right: 1rem;
 }
