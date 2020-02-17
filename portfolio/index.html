@@ -58,8 +58,8 @@
        </symbol>
     </svg>
 
-
     <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
 </head>
 
 <!--   class="no-scroll"   -->
@@ -129,92 +129,97 @@
     <!-- works -->
     <div class="works">
         <div class="container">
-            <div class="works__nav"> <a href="" class="works__nav-link">All</a> <a href="" class="works__nav-link">App</a> <a href="" class="works__nav-link">Websites</a> <a href="" class="works__nav-link">Interactions</a> </div>
+            <div class="works__nav">
+                <a href="" class="works__nav-link" data-filter="all">All</a>
+                <a href="" class="works__nav-link" data-filter="app">App</a>
+                <a href="" class="works__nav-link" data-filter="website">Websites</a>
+                <a href="" class="works__nav-link" data-filter="interaction">Interactions</a>
+            </div>
             <div class="portfolio">
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="website">
                     <div class="work"> <img class="img" src="assets/images/works/p1.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: website</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="website">
                     <div class="work"> <img class="img" src="assets/images/works/p2.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: website</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="interaction">
                     <div class="work"> <img class="img" src="assets/images/works/p3.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: interaction</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="interaction">
                     <div class="work"> <img class="img" src="assets/images/works/p4.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: interaction</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="app">
                     <div class="work"> <img class="img" src="assets/images/works/p5.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: app</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="website">
                     <div class="work"> <img class="img" src="assets/images/works/p6.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: website</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="app">
                     <div class="work"> <img class="img" src="assets/images/works/p7.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: app</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="interaction">
                     <div class="work"> <img class="img" src="assets/images/works/p8.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: interaction</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="app">
                     <div class="work"> <img class="img" src="assets/images/works/p9.jpg" alt="">
                         <div class="work__content">
-                            <div class="work__cat">Category</div>
+                            <div class="work__cat">Category: app</div>
                             <div class="work__title"> project title
                                 <time class="work__date" datetime="2020-02-09 10:20">2020</time>
                             </div>
@@ -616,6 +621,7 @@
 </div>  <!-- /.modal -->
 
 
+<!-- JS -->
+<script src="assets/js/app.js" ></script>
 </body>
-
 </html>
