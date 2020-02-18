@@ -119,8 +119,8 @@
                                 <use xlink:href="#twitter"></use>
                              </svg>
                         </a>
-                    </div> <a class="btn" href="">hire me</a>
-                    <button class="btn" type="button">see my resume</button>
+                    </div> <a class="btn" data-modal="#modal__hireme" href="">hire me</a>
+                    <button class="btn" data-modal="#modal__resume" type="button">see my resume</button>
                 </div> <img class="intro__photo" src="assets/images/photo.png" alt=""> </div>
             <!-- /.intro__inner -->
         </div>
@@ -409,16 +409,23 @@
 
 
 <!-- Modal "WORK" -->
-<div class="modal" style="display:none" >
+<div class="modal" id="modal__project1" >
     <div class="modal__dialog">
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
             <svg>
                 <use xlink:href="#cancel"></use>
             </svg>
         </button>
         <div class="modal-work">
             <div class="modal-work__preview">
-                <img src="https://placehold.it/790x780" alt="" class="modal-work__photo">
+               <div id="worksSlider">
+                  <div>
+                     <img src="https://placehold.it/790x780" alt="" class="modal-work__photo">
+                   </div>
+                   <div>
+                     <img src="https://placehold.it/790x780/333" alt="" class="modal-work__photo">
+                   </div>
+                </div>
             </div>
             <div class="modal-work__content">
                <div class="modal-work__header">
@@ -450,12 +457,10 @@
 </div>  <!-- /.modal -->
 
 
-
-
 <!-- Modal "RESUME" -->
-<div class="modal" style="display:none" >
+<div class="modal" id="modal__resume" >
     <div class="modal__dialog">
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
             <svg>
                 <use xlink:href="#cancel"></use>
             </svg>
@@ -587,9 +592,9 @@
 
 
 <!-- Modal "LET'S TALK" -->
-<div class="modal" style="display:none">
+<div class="modal" id="modal__hireme" >
     <div class="modal__dialog modal__dialog--sm">
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
             <svg>
                 <use xlink:href="#cancel"></use>
             </svg>
@@ -622,6 +627,7 @@
 
 
 <!-- JS -->
+<script src="assets/js/slick.min.js" ></script>
 <script src="assets/js/app.js" ></script>
 </body>
 </html>
