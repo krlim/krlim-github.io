@@ -1,22 +1,19 @@
-$(function () {
-
-
-
 // Filter
+$(function () {
     let filter = $("[data-filter]");
-    filter.on("click", function(event) {
+    filter.on("click", function (event) {
         event.preventDefault();
         let cat = $(this).data('filter');
-        if(cat == 'all') {
+        if (cat === 'all') {
             $("[data-cat]").removeClass('hide');
         } else {
-             $("[data-cat]").each(function(){
+             $("[data-cat]").each(function () {
             let workCat = $(this).data('cat');
             if(workCat != cat) {
                 $(this).addClass('hide');
             }
             else $(this).removeClass('hide');
-        });
+            });
         }
     });
 
@@ -48,20 +45,33 @@ modalClose.on("click", function(event) {
     event.preventDefault();
     let $this = $(this);
     let modalParent = $this.parents('.modal');
-    modalParent.removeClass('show');
-    $('body').removeClass('no-scroll');
-    setTimeout(function(){
-        $(modalId).find('.modal__dialog').css({
-           transform: "rotateX(0)"
+
+    modalParent.find('.modal__dialog').css({
+           transform: "rotateX(90deg)"
         });
-    }, 200);
+
+     setTimeout(function(){
+        modalParent.removeClass('show');
+        $('body').removeClass('no-scroll');
+     }, 200);
 });
 
+
 $('.modal').on("click", function(event) {
-     event.preventDefault();
-    $(this).removeClass('show');
-    $('body').removeClass('no-scroll');
+    event.preventDefault();
+    let $this = $(this);
+    $this.find('.modal__dialog').css({
+           transform: "rotateX(90deg)"
+        });
+
+      setTimeout(function(){
+        $this.removeClass('show');
+        $('body').removeClass('no-scroll');
+      }, 200);
 });
+
+
+
 $('.modal__dialog').on("click", function(event) {
     event.stopPropagation();
 });
