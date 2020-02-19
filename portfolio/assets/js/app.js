@@ -24,7 +24,7 @@ $(function () {
 const modalCall = $('[data-modal]');
 const modalClose = $('[data-close]');
 
-
+// open modal
 modalCall.on("click", function(event) {
     event.preventDefault();
     let $this = $(this);
@@ -36,11 +36,10 @@ modalCall.on("click", function(event) {
            transform: "rotateX(0)"
         });
     }, 200);
-
 });
 
 
-
+// close modal by click close button
 modalClose.on("click", function(event) {
     event.preventDefault();
     let $this = $(this);
@@ -56,7 +55,7 @@ modalClose.on("click", function(event) {
      }, 200);
 });
 
-
+// close modal by click on dark region
 $('.modal').on("click", function(event) {
     event.preventDefault();
     let $this = $(this);
@@ -69,14 +68,9 @@ $('.modal').on("click", function(event) {
         $('body').removeClass('no-scroll');
       }, 200);
 });
-
-
-
 $('.modal__dialog').on("click", function(event) {
     event.stopPropagation();
 });
-
-
 
 
 // Slider: slick https://kenwheeler.github.io/slick/
