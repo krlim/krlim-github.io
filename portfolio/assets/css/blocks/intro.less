@@ -4,10 +4,14 @@
 }
 .intro__inner {
     display: flex;
-    padding: 100px 0 120px;
+    padding: 10rem 0 12rem;
     border-bottom: 1px solid fade(@gray, 30%);
     background: url(../images/symbols.png) right bottom no-repeat;
     position: relative;
+    @media @tablet {
+        padding: 5rem 0 6rem;
+        background-size: 400px auto;
+    }
 }
 .intro__content {
     width: 50%;
@@ -16,12 +20,18 @@
     font-size: 3.2rem;
     color: @black;
     font-weight: 200;
+    @media @tablet {
+     font-size: 2rem;
+    }
 }
 .intro__title {
     margin-bottom: 5px;
     font-size: 4.5rem;
     color: @black;
     font-weight: 700;
+    @media @tablet {
+     font-size: 3rem;
+    }
 }
 .intro__text {
     margin-bottom: 25px;
@@ -34,4 +44,8 @@
     right: 0;
     bottom: -1px;
     z-index: 1;
+    @media @tablet {
+        width: 350px;
+
+    }
 }

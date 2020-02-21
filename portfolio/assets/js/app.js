@@ -36,7 +36,7 @@ modalCall.on("click", function(event) {
            transform: "rotateX(0)"
         });
     }, 200);
-    $('#worksStider').slick('setPosition');
+    $('[data-slider="slick"]').slick('setPosition');
 });
 
 
@@ -86,7 +86,7 @@ $('[data-slider="slick"]').slick({
 
 $('.slickPrev').on("click", function(event) {
     event.preventDefault();
-    let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]')
+    let currentSlider = $(this).parents('.modal-work').find('[data-slider="slick"]')
     currentSlider.slick('slickPrev');
 });
 $('.slickNext').on("click", function(event) {
