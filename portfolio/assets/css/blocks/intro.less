@@ -15,6 +15,9 @@
 }
 .intro__content {
     width: 50%;
+    @media @mobile-sm {
+         width: 100%;
+    }
 }
 .intro__subtitle {
     font-size: 3.2rem;
@@ -44,8 +47,11 @@
     right: 0;
     bottom: -1px;
     z-index: 1;
+
     @media @tablet {
         width: 350px;
-
+    }
+    @media @mobile-sm {
+         display: none;
     }
 }

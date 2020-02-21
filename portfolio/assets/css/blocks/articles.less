@@ -10,6 +10,9 @@
 .articles__col {
     width: 33.33333%;
     padding: 0 1.5rem;
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .articles__title {
@@ -63,6 +66,13 @@
     top: 0;
     z-index: 1;
 }
+
+.articles__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .articles__more {
     display: block;
     width: 100%;
