@@ -94,3 +94,14 @@ $('.slickNext').on("click", function(event) {
      let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]')
     currentSlider.slick('slickNext');
 });
+
+// Nav
+
+let navToggle = $('#navToggle');
+let nav = $('#nav');
+
+navToggle.on("click", function(event){
+     event.preventDefault();
+     nav.toggleClass('show');
+});
+

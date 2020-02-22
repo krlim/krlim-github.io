@@ -6,7 +6,15 @@
 
     @media @mobile {
     display: none;
-}
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1000;
+    flex-direction: column;
+        &.show {
+            display: flex;
+        }
+    }
 }
 .nav__link {
     margin-left: 3rem;
