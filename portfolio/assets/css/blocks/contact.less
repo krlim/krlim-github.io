@@ -2,10 +2,29 @@
 .contact {
     display: flex;
     background: url(https://www.fillmurray.com/477/700) right center no-repeat;
+    @media @tablet {
+        background-size: 56%;
+    }
+    @media @mobile {
+        background-size: 40%;
+        background-position: right 2rem center;
+    }
+    @media @mobile-sm {
+        background: none;
+    }
+
 }
 .contact__left {
     width: 47%;
     padding: 3rem;
+
+    @media @mobile {
+        width: 55%;
+    }
+    @media @mobile-sm {
+         width: 100%;
+    }
+
 }
 
 .contact__info {
