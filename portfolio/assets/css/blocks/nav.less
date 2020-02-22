@@ -5,12 +5,18 @@
     align-items: center;
 
     @media @mobile {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: 1000;
-    flex-direction: column;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 1000;
+        flex-wrap: wrap;
+        background-color: @white;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
         &.show {
             display: flex;
         }
@@ -50,5 +56,10 @@
             background-color: @black;
             color: @white;
         }
+    }
+    @media @mobile {
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem 0;
     }
 }
