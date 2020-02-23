@@ -74,15 +74,26 @@ $('.modal__dialog').on("click", function(event) {
 });
 
 
+
+
+
+
 // Slider: slick https://kenwheeler.github.io/slick/
 $('[data-slider="slick"]').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: false,
     fade: true,
     arrows: false,
     dots: true
 });
+
+
+
+
+
+
 
 $('.slickPrev').on("click", function(event) {
     event.preventDefault();
