@@ -1,4 +1,4 @@
-// Filter
+// Filter *****************************************
 $(function () {
     let filter = $("[data-filter]");
     filter.on("click", function (event) {
@@ -18,9 +18,9 @@ $(function () {
     });
 
 });
+// Filter ******************************************
 
-
-// Modal
+// Modal *******************************************
 const modalCall = $('[data-modal]');
 const modalClose = $('[data-close]');
 
@@ -73,12 +73,12 @@ $('.modal__dialog').on("click", function(event) {
     event.stopPropagation();
 });
 
+// Modal ***************************************************
 
 
 
 
-
-// Slider: slick https://kenwheeler.github.io/slick/
+// Slider: slick https://kenwheeler.github.io/slick/ ********
 $('[data-slider="slick"]').slick({
     infinite: true,
     slidesToShow: 1,
@@ -89,12 +89,7 @@ $('[data-slider="slick"]').slick({
     dots: true
 });
 
-
-
-
-
-
-
+// Slider buttons (prev/next) ********
 $('.slickPrev').on("click", function(event) {
     event.preventDefault();
     let currentSlider = $(this).parents('.modal-work').find('[data-slider="slick"]')
@@ -105,9 +100,10 @@ $('.slickNext').on("click", function(event) {
      let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]')
     currentSlider.slick('slickNext');
 });
+// Slider **********************************************************
 
-// Nav
 
+// Nav *************************************************************
 let navToggle = $('#navToggle');
 let nav = $('#nav');
 
@@ -115,4 +111,22 @@ navToggle.on("click", function(event){
      event.preventDefault();
      nav.toggleClass('show');
 });
+// Nav *****************************************************************
 
+// Scroll **************************************************************
+
+$("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+    let blockId = $(this).data("scroll");
+    let blockOffset = $(blockId).offset().top;
+    $("html, body").animate({
+        scrollTop: blockOffset -70
+    }, 200);
+});
+
+
+
+
+
+
+// Scroll **************************************************************
