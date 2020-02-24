@@ -11,7 +11,14 @@
 
 .progress-bar__right {
     padding-right: 11rem;
+    @media @mobile-sm {
+        min-width: 80px;
+    }
 }
+.progress-bar__left {
+    min-width: 100px;
+}
+
 .progress-bar__title {
     font-size: 1.2rem;
     font-weight: 300;

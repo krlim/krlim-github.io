@@ -1,10 +1,14 @@
 // main: ../style.less
 .timeline {
     display: flex;
+    flex-wrap: wrap;
     margin: 6.3rem auto;
     max-width: 768px;
     width: 100%;
     position: relative;
+    @media @mobile-sm {
+            margin:  4rem auto;
+        }
     &:after {
         content: "";
         width: 1px;
@@ -15,6 +19,9 @@
         top: 0;
         left: 50%;
         z-index: 1;
+        @media @mobile-sm {
+            display: none;
+        }
     }
 }
 .timeline__col {
@@ -22,13 +29,26 @@
      &--left {
         text-align: right;
         padding-right: 3.2rem;
+         @media @mobile{
+             padding-right: 1rem;
+         }
     }
     &--right {
         padding-left: 3.2rem;
+        @media @mobile{
+             padding-left: 1rem;
+         }
+    }
+    @media @mobile-sm {
+        width: 100%;
+        text-align: center;
     }
 }
 .timeline__item {
     margin-bottom: 3.8rem;
+    @media @mobile-sm {
+       margin-bottom: 2rem;
+    }
     &:last-child {
         margin-bottom: 0;
     }
