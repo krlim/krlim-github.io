@@ -117,10 +117,11 @@ navToggle.on("click", function(event){
 
 $("[data-scroll]").on("click", function(event) {
     event.preventDefault();
+    nav.removeClass("show");
     let blockId = $(this).data("scroll");
     let blockOffset = $(blockId).offset().top;
     $("html, body").animate({
-        scrollTop: blockOffset -70
+        scrollTop: blockOffset -80
     }, 200);
 });
 
