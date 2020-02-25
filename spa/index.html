@@ -6,20 +6,50 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width">
 
+
+
+<!--  Sprites  -->
+    <svg style="display: none;">
+        <symbol id="next" viewBox="0 0 64 64">
+           <g>
+              <path d="m37.379 12.552c-.799-.761-2.066-.731-2.827.069-.762.8-.73 2.066.069 2.828l15.342 14.551h-39.963c-1.104 0-2 .896-2 2s.896 2 2 2h39.899l-15.278 14.552c-.8.762-.831 2.028-.069 2.828.393.412.92.62 1.448.62.496 0 .992-.183 1.379-.552l17.449-16.62c.756-.755 1.172-1.759 1.172-2.828s-.416-2.073-1.207-2.862z"/>
+           </g>
+       </symbol>
+
+    </svg>
+
     <title>Leospa</title>
 </head>
 <body>
+<!--
     <img src="assets/images/flowers-bg.png" alt="" class="fixed__greenery">
     <img src="assets/images/flower1.png" alt="" class="fixed__flower-big">
     <img src="assets/images/flower2.png" alt="" class="fixed__flower-sm">
+-->
+<!-- Header  -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo"></div>
-                <div class="header__nav"></div>
+                <div class="header__logo">
+                  <img src="assets/images/butterfly.png" alt="" class="header__ico">
+                    <div class="header__name">Leospa</div>
+                </div>
+                <div class="nav">
+                    <a href="" class="nav__link">home</a>
+                    <a href="" class="nav__link">about</a>
+                    <a href="" class="nav__link">feature</a>
+                    <a href="" class="nav__link">service</a>
+                    <a href="" class="nav__link">contact</a>
+                </div>
             </div>
         </div>
     </header>
+<!--  Intro  -->
+    <section class="intro">
+        <svg class="intro__next">
+            <use xlink:href="#next"></use>
+        </svg>
 
+    </section>
 </body>
 </html>
