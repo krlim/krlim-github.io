@@ -1,11 +1,30 @@
 // main: ../style.less
 .intro {
-    padding: 10rem 0;
-    background: url(../images/bg-intro.png) center repeat;
-//    background: url(../images/flowers-bg.png) left top no-repeat;
+    width: 1920px;
+    height: 1051px;
+    position: relative;
+    overflow: hidden;
 }
 .intro__next {
     width: 12px;
     height: 12px;
     fill: @black;
+}
+.intro__blot {
+    position: absolute;
+    right: -433px;
+    top: -50px;
+    z-index: 1;
+}
+.intro__flower {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.intro__bouqet {
+    position: absolute;
+    left: -250px;
+    top: 200px;
+    z-index: 1;
 }
