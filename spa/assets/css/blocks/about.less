@@ -1,7 +1,9 @@
 // main: ../style.less
 .about {
-    padding: 27rem 0;
+    padding: 9rem 0;
     display: flex;
+    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
 }
 .flex1 {
@@ -11,12 +13,15 @@
     flex-basis: 33%;
 }
 .flex3 {
-    flex-basis: 50%;
+    flex-basis: 40%;
     position: relative;
+
 }
 .about__img {
+    clip: rect(auto, 20%, auto, auto);
     position: absolute;
-    right: 0;
-    top: -320;
+    max-width: 100%;
+    right: -140px;
+    bottom: -13%;
     z-index: 1;
 }
