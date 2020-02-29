@@ -1,6 +1,5 @@
 // main: ../style.less
 .about {
-    padding: 9rem 0;
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -17,11 +16,15 @@
     position: relative;
 
 }
-.about__img {
-    clip: rect(auto, 20%, auto, auto);
+.about_leaf {
     position: absolute;
-    max-width: 100%;
-    right: -140px;
-    bottom: -13%;
+    left: 0;
+    bottom: 35%;
+    z-index: 1;
+}
+.about__img {
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: 1;
 }
