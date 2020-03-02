@@ -1,6 +1,6 @@
 "use strict";
-"esversion:6";
-console.log(leftBorderWidth);
-var leftBorderWidth = 1;
-let second = 2;
-const pi = 3.14;
+
+let arr = ['index.html','style.css','script.js'];
+console.log(arr[0]);
+let answer = prompt("Who are you?", "Max");
+alert("You are " + answer);
