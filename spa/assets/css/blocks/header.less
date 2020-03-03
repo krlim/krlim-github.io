@@ -1,42 +1,29 @@
 // main: ../style.less
-
 .header {
-    padding: 1.8rem 0;
-    position: relative;
-    @media @mobile {
-        padding: .3rem 0;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 1001;
-        background-color: @white;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
-    }
+
 }
 .header__inner {
+    padding: 7rem 0;
+    width: 100%;
+    max-width: 750px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.user {
-    display: flex;
+.header__logo {
+    position: relative;
 }
-.user__avatar img{
-    border-radius: 50%;
+.header__ico {
+    position: absolute;
+    left: 31px;
+    bottom: 39px;
+    z-index: 1;
 }
-.user__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: .9rem;
-}
-.user__name {
-    font-size: 1.6rem;
-    font-weight: 700;
+
+.header__name {
     color: @black;
-}
-.user__prof {
-    font-size: 1.2rem;
-    color: @gray;
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
