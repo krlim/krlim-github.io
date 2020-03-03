@@ -1,0 +1,42 @@
+// main: ../style.less
+
+.header {
+    padding: 1.8rem 0;
+    position: relative;
+    @media @mobile {
+        padding: .3rem 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1001;
+        background-color: @white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    }
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user {
+    display: flex;
+}
+.user__avatar img{
+    border-radius: 50%;
+}
+.user__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: .9rem;
+}
+.user__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: @black;
+}
+.user__prof {
+    font-size: 1.2rem;
+    color: @gray;
+}
