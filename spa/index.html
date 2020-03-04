@@ -5,17 +5,29 @@
     <link rel="stylesheet" href="assets/css/style.css">
      <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400,500|Rufina:400,700&display=swap" rel="stylesheet">
 
+<!-- Sprites -->
+    <svg style="display: none;">
+        <symbol id="arrow-next" viewBox="0 0 64 64">
+            <g>
+                <path d="m37.379 12.552c-.799-.761-2.066-.731-2.827.069-.762.8-.73 2.066.069 2.828l15.342 14.551h-39.963c-1.104 0-2 .896-2 2s.896 2 2 2h39.899l-15.278 14.552c-.8.762-.831 2.028-.069 2.828.393.412.92.62 1.448.62.496 0 .992-.183 1.379-.552l17.449-16.62c.756-.755 1.172-1.759 1.172-2.828s-.416-2.073-1.207-2.862z"/>
+            </g>
+        </symbol>
+    </svg>
+
+
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leospa</title>
 </head>
 <body>
-<div class="img__left">
-    <img src="assets/images/leaf.png" alt="">
-</div>
-<div class="img__right">
-    <img src="assets/images/spa-main.png" alt="">
-</div>
-
+    <div class="img__left">
+        <img src="assets/images/leaf.png" alt="">
+    </div>
+    <div class="img__right">
+        <img src="assets/images/spa-main.png" alt="">
+    </div>
 <!-- Header  -->
     <header class="header">
         <div class="container">
@@ -37,6 +49,7 @@
 
 <!--  Intro  -->
     <section class="intro">
+
          <div class="container">
             <div class="intro__inner">
                 <div class="intro__suptitle">
@@ -48,6 +61,14 @@
                 <div class="intro__text">
                     Together creeping heaven upon third dominion be upon won't darkness rule
                     behold it created good saw after she'd Our set living.
+                </div>
+                <div class="buttons">
+                    <button class="btn">reserve now
+                        <svg class="intro__next">
+                            <use xlink:href="#arrow-next"></use>
+                        </svg>
+                    </button>
+                    <a href="" class="intro__watch">Watch our story</a>
                 </div>
             </div>
         </div>
