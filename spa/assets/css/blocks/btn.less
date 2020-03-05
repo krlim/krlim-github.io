@@ -5,56 +5,37 @@
     vertical-align: top;
     text-align: center;
 
+
+
     padding: 1.05em 1.7em;
     min-width: 170px;
-    border: 1px solid @gray;
     border-radius: 30px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: inherit;
-    font-size: 1.6rem;
-    line-height: 1.1;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    line-height: 1.7;
     cursor: pointer;
-    color: @gray;
-    background-color: @white;
+    color: @white;
+    background-color: @pink;
     transition: color .2s linear, background .2s linear, box-shadow .2s linear;
     &:focus {
         outline: none;
     }
     &:hover {
-        color: @white;
-        background-color: @black;
-        border-color: @black;
+        background-color: #ff002d;
         box-shadow: 2px 2px 10px fade(#000, 25%);
     }
     + .btn {
         margin-left: 1rem;
     }
     /* Modificators */
-    &--sm {
-         padding: .7em 1.4em;
-         min-width: 100px;
-         font-size: 1.4rem;
-         font-weight: 700;
-         border-width: 2px;
+    &--sq {
+         border-radius: 0;
     }
     &--thin {
         min-width: 145px;
         font-size: 1.2rem;
-    }
-     @media @tablet {
-     font-size: 1.4rem;
-        min-width: 120px;
-         padding: .8em 1.5em;
-    }
-
-    @media @mobile-sm {
-        display: block;
-        width: 100%;
-        + .btn{
-            margin-left: 0;
-            margin-top: 1rem;
-        }
     }
 }
 
