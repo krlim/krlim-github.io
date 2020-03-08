@@ -1,5 +1,5 @@
 // main: ../style.less
-.prog__content {
+.proc__content {
     margin: 0 -15px;
     display: flex;
     justify-content: space-between;
@@ -7,9 +7,18 @@
 }
 
 .proc__item {
-    width: 33%;
+    padding-bottom: 0rem;
+    width: 32%;
     border: 1px solid #e3e6ea;
     text-align: center;
+    &:hover {
+        border-color: @white;
+        box-shadow: 0 15px 40px rgba(4, 10, 50, 0.1);
+    }
+     &:active {
+        border-color: @white;
+        box-shadow: 0 15px 40px rgba(4, 10, 50, 0.1);
+    }
 
 }
 .proc__image {
@@ -17,11 +26,21 @@
 }
 .proc__info {
     text-align: center;
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
 }
 .proc__title {
-
+    font-family: Rufina;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 .proc__text {
-
+    padding: 0 4rem;
+    color: @gray;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 27px;
+    margin-bottom: 3.8rem;
 }
