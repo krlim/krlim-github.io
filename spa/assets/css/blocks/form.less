@@ -5,14 +5,25 @@
 }
 .form__input {
     display: block;
-    padding: 7px 5px;
-    border-bottom: 1px solid #263a41;
+    width: 320px;
+    padding: 15px 3px;
+    border: none;
+    border-bottom: 1px solid rgba(38, 58, 65, .2);
+    outline: none;
     color: #999999;
-  //  background-color: transparent;
+    background-color: #fff9f8;
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 6rem;
-    border: none;
+    margin-bottom: 2.4rem;
 }
+.form__input::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url(../images/calendar.svg) no-repeat center;
+    fill: red;
+    background-size: contain;
+    cursor: pointer;
+}
+.form__input::-webkit-inner-spin-button { display: none; }
