@@ -1,7 +1,10 @@
 // main: ../style.less
-.form__col1 {
-    padding-left: 100px;
-    padding-top: 132px;
+.form__field {
+    display: flex;
+    margin-bottom: 4.7rem;
+}
+.form__col {
+    padding: 115px 10px 0;
 }
 .form__input {
     display: block;
@@ -17,12 +20,17 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 2.4rem;
+    &::-webkit-calendar-picker-indicator {
+        color: transparent;
+        opacity: 1;
+        background: url(../images/calendar.svg) no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+    }
+    &--note {
+        width: 662px;
+        margin-left: 13px;
+    }
 }
-.form__input::-webkit-calendar-picker-indicator {
-    color: transparent;
-    opacity: 1;
-    background: url(../images/calendar.svg) no-repeat center;
-    background-size: contain;
-    cursor: pointer;
-}
-.form__input::-webkit-inner-spin-button { display: none;}
+input[type=date]::-webkit-inner-spin-button { display: none;}
+
