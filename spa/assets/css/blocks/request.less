@@ -3,7 +3,7 @@
      background-color: #fff9f8;
      padding: 0;
      display: flex;
-     margin-bottom: 7rem;
+     margin: 21rem 0 7rem
 }
 .request__left {
     width: 32%;
@@ -24,5 +24,15 @@
     width: 68%;
     padding-left: 100px;
 }
+@media @notebook {
+    .request__left{
+        display: none;
+    }
+    .request__right{
+        width: 100%;
+        padding: 3rem 2rem 10rem;
+        display: flex;
+        justify-content: center;
 
-
+    }
+}
