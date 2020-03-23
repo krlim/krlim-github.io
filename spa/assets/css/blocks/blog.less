@@ -1,6 +1,7 @@
 // main: ../style.less
 .blog__content {
     margin: 0 -15px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -23,6 +24,7 @@
 }
 .blog__image {
     padding: 2rem;
+    max-width: 320px;
 }
 .blog__info {
     text-align: center;
@@ -61,10 +63,16 @@
 
 }
 @media @tablet {
-
+    .blog__title {
+        font-size: 1.8rem;
+    }
 }
 @media @mobile {
-
+    .blog__item {
+        width: 100%;
+        max-width: 350px;
+        margin: 5px auto;
+    }
 }
 @media @mobile-sm {
 
