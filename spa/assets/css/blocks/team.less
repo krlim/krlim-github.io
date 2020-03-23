@@ -2,11 +2,14 @@
 .team__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 .team__item {
     width: 33%;
     position: relative;
+}
+.team__photo {
+    width: 100%
 }
 .team__info {
     display: flex;
@@ -72,4 +75,15 @@
             color: #fff;
         }
       }
+}
+
+@media @mobile {
+    .team__item {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 10rem;
+    }
+    .team__info {
+       // width: 300px;
+    }
 }

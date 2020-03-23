@@ -1,11 +1,11 @@
 // main: ../style.less
 .treatment {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .treatment__item {
     width: 24.8%;
-  //  border-right: 5px solid @white;
     position: relative;
     background: @pink;
      &:hover {
@@ -39,4 +39,16 @@
 }
 .treatment__text {
     padding-top: 1.3rem;
+}
+
+@media @mobile {
+    .treatment__item {
+      width: 50%;
+      border: 5px solid @white;
+    }
+}
+@media @mobile-sm{
+    .treatment__item {
+      width: 100%;
+    }
 }
