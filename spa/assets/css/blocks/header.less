@@ -1,9 +1,18 @@
 // main: ../style.less
 .header {
-
-}
-.header__inner {
+    width: 100%;
     padding: 7rem 0;
+    &.fixed {
+        position: fixed;
+        z-index: 1000;
+        background-color: @white;
+        padding: 4.7rem 0 2rem;
+        top: 0;
+        box-shadow: 0 15px 30px rgba(48, 56, 59, 0.1);
+}
+}
+
+.header__inner {
     width: 100%;
     max-width: 750px;
     display: flex;
@@ -30,6 +39,5 @@
 
 @media @mobile {
     .header__inner {
-        padding-bottom: 3rem;
     }
 }
