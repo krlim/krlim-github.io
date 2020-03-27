@@ -41,5 +41,21 @@
 @media @mobile {
     .nav {
         display: none;
+        &.show {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            z-index: 1000;
+            box-shadow: 0 15px 30px rgba(48, 56, 59, 0.1);
+            & .nav__link {
+                background-color: @white;
+                margin: 0;
+                padding: 9px;
+                width: 150px;
+                text-align: center;
+            }
+        }
     }
 }

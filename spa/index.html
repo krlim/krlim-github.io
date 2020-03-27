@@ -75,7 +75,13 @@
                 <div class="header__logo"> <img src="assets/images/butterfly.png" alt="" class="header__ico">
                     <div class="header__name">Leospa</div>
                 </div>
-                <nav class="nav"> <a href="" class="nav__link">home</a> <a href="" class="nav__link">about</a> <a href="" class="nav__link">feature</a> <a href="" class="nav__link">service</a> <a href="" class="nav__link">contact</a> </nav>
+                <nav class="nav" id="nav">
+    <a href="" class="nav__link" data-scroll="#intro">home</a>
+    <a href="" class="nav__link" data-scroll="#about">about</a>
+    <a href="" class="nav__link" data-scroll="#feature">feature</a>
+    <a href="" class="nav__link" data-scroll="#service">service</a>
+    <a href="" class="nav__link" data-scroll="#contact">contact</a>
+                </nav>
                 <button class="burger" id="burger" type="button">
                        <span class="burger__item">Menu</span>
                     </button>
@@ -105,7 +111,7 @@
         </div>
     </section>  <!-- ./Intro -->
     <!--  About  -->
-    <section class="section about"> <img class="about__flower-left" src="assets/images/flower1.png" alt=""> <img class="about__flower-right" src="assets/images/flower2.png" alt="">
+    <section class="section about" id="about"> <img class="about__flower-left" src="assets/images/flower1.png" alt=""> <img class="about__flower-right" src="assets/images/flower2.png" alt="">
         <div class="container">
             <div class="about__inner"> <img class="about__ico img" src="assets/images/butterfly.png" alt="">
                 <h4 class="about__suptitle">About our spa center</h4>
@@ -116,9 +122,9 @@
                 <div><a class="btn">READ MORE</a></div>
             </div> <!-- ./about__inner -->
         </div> <!-- ./container -->
-    </section>
-    <!-- ./about -->
-    <div class="section treatment">
+    </section> <!-- ./about -->
+
+    <div class="section treatment" id="feature">
         <div class="treatment__item"> <img class="treatment__photo img" src="assets/images/treatments/1.jpg" alt="">
             <div class="treatment__info">
                 <div class="treatment__icon"> <img src="assets/images/treatments/herbal.svg" alt=""> </div>
@@ -145,7 +151,7 @@
         </div>
     </div> <!-- ./treatment -->
 
-    <section class="section proc">
+    <section class="section proc" id="service">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Popular Procedures</h2>
@@ -316,7 +322,7 @@
         </div> <!-- ./container -->
     </section> <!-- ./blog -->
 
-    <section class="section contact">
+    <section class="section contact" id="contact">
         <div class="container">
            <div class="section__header">
                 <h2 class="section__title">Get In Touch</h2>
