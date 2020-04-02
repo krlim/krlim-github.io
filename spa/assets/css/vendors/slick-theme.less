@@ -32,7 +32,7 @@
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background: transparent;
+    background: red;
     color: transparent;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -165,5 +165,22 @@
             color: @slick-dot-color-active;
             opacity: @slick-opacity-default;
         }
+    }
+}
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    button {
+        width: 11px;
+        height: 11px;
+        padding: 0;
+        background-color: @white;
+        border: 1px solid @white;
+        background: none;
+        border-radius: 50%;
+        font-size: 0;
+        color: transparent;
+
     }
 }
