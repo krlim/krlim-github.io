@@ -46,6 +46,8 @@ $(function() {
 
     });
 
+
+     // Slider  https://kenwheeler.github.io/slick/
     $('.slider').slick({
       infinite: true,
       slidesToShow: 1,
