@@ -1,4 +1,2 @@
-var x = 122324;
-var y = 7;
-
-console.log(x + " + " + y + " = " + (x+y));
+let money = prompt("Ваш бюджет на месяц?"," "),
+    time = prompt("Введите дату в формате YYYY-MM-DD","2020-04-22");
