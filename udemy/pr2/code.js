@@ -1,5 +1,1 @@
-let i = 0;
-while(i < 5) {
-    console.log("Hi1");
-    i++;
-}
+console.log(  2 && 1 && undefined && 0  ); // [6]
