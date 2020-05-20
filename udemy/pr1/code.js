@@ -1,6 +1,10 @@
-let money = +prompt("Ваш бюджет на месяц?",""),
-    time = prompt("Введите дату в формате YYYY-MM-DD","2020-04-22"),
-    appData = {
+let money, time;
+function start() {
+    money = +prompt("Ваш бюджет на месяц?","");
+    time = prompt("Введите дату в формате YYYY-MM-DD","2020-04-22");
+}
+
+let     appData = {
         moneyData: money,
         timeData: time,
         expenses: {},
@@ -16,9 +20,10 @@ for (let i = 0; i < 2; i++) {
         appData.expenses[a] = b;
     } else {
         alert("Введенные данные не верны");
+        i -= 1;
     }
-
 }
+
 appData.moneyPerDay = appData.moneyData/30;
 alert("Ежедневный бюджет: " + appData.moneyPerDay + "грн");
 if(appData.moneyPerDay < 100) {
