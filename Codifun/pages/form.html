@@ -5,7 +5,13 @@
     <title>Форма с личными данными</title>
 </head>
 <body>
-    <h1 style="text-align: center">Форма с личными данными</h1>
+    <h1 align="center">Форма с личными данными</h1>
+    <div align="center">
+        <canvas id="myCanvas" style="width: 300px; height: 80px; border: 2px solid #a7a3a3">
+
+        </canvas>
+    </div>
+
     <form action="" method="post">
         <span>Имя:</span><br>
         <input type="text" name="name"> <br><br>
@@ -29,7 +35,7 @@
         <span>Password:</span>
         <input type="password" name="password"> <br><br>
         <span>Как часто хотите получать уведомления на электронную почту?</span><br>
-        <input type="radio" name="notice" value="everytime">Всегда<br>
+        <input type="radio" name="notice" value="everytime" checked>Всегда<br>
         <input type="radio" name="notice" value="monthly">Ежемесячно<br>
         <input type="radio" name="notice" value="never">Никогда<br><br><br>
         <span>Ваше мнение о Codifun:</span><br>
@@ -37,5 +43,11 @@
 
 
     </form>
+    <script>
+        var canv = document.getElementById("myCanvas");
+        var ctx = canv.getContext('2d');
+        ctx.font = "25px Arial";
+        ctx.fillText("Hello World", 75, 45);
+    </script>
 </body>
 </html>
