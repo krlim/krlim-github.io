@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
     background-color: #eeecec;
     padding: 18px;
@@ -6,6 +10,7 @@
 .header__text {
     font-style: italic;
 }
+
 .nav {
     overflow: hidden;
     background-color: rgb(34,33,33);
@@ -16,41 +21,48 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font: bold 13px Geaorgia, serif;
+    font: bold 13px Georgia, serif;
 }
 .nav a:hover {
     background-color: rgb(202,202,202);
     color: #000;
 }
 
+section {
+    padding: 10px;
+}
 
-
-article {
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
     text-align: center;
 }
-article p {
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.article__author{
+    color: #009688;
+}
+.article_text {
+    color: #5f5f5f;
     font-size: 16px;
 }
-img {
-    display: block;
-    width: 90%;
+.article__img {
+    max-width: 100%;
 }
-#nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+
+@media screen and (max-width:800px) {
+    .column {
+        width: 100%;
+    }
 }
-#nav-menu .nav-item {
-    border: 1px solid #dedede;
-    padding: 5px;
+footer {
+    background-color: #eeecec;
+    padding: 16px;
     text-align: center;
-}
-#nav-menu .nav-item a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000;
-}
-#nav-menu .nav-item:hover {
-    text-decoration: underline;
-    font-weight: 700;
 }
