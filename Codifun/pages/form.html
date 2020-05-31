@@ -2,57 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Форма с личными данными</title>
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
-    <h1 align="center">Форма с личными данными</h1>
-    <div align="center">
-        <canvas id="myCanvas" style="width: 300px; height: 80px; border: 2px solid #a7a3a3">
+   <header class="header">
+       <h1>Codifun Inspire Me !</h1>
+       <p class="header__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel nam, iure tempora dolore dolores aperiam sint, est veritatis et ea incidunt expedita illum libero earum qui, hic ex voluptate? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel nam, iure tempora dolore dolores aperiam sint, est veritatis et ea incidunt expedita illum libero earum qui, hic ex voluptate?</p>
+   </header>
+   <nav class="nav">
+        <a class="nav-link" href="../index.html">Главная страница</a>
+        <a class="nav-link" href="interest.html">Интересно о...</a>
+        <a class="nav-link" href="address.html">Адрес</a>
+        <a class="nav-link" href="form.html">Заполните форму</a>
+    </nav>
 
-        </canvas>
-    </div>
-    <h4 style = "display: inline">Нажмите чтобы вернутся</h4>
-    <a href="../index.html">
-        <svg width="50" height="50">
-            <circle cx="25" cy="25" r="20" stroke="green" stroke-width=4 fill="yellow"/>
-        </svg>
-    </a><br><br>
-    <form action="" method="post">
-        <span>Имя:</span><br>
-        <input type="text" name="name"> <br><br>
-        <span>Фамилия:</span><br>
-        <input type="text" name="surname"> <br><br>
-         <span>Дата рождения:</span>
-        <input type="date" name="date"> <br><br>
-        <span>Страна происхождения:</span>
-        <select name="country" id="country">
-            <option value="Ukraine">Украина</option>
-            <option value="Russia">Россия</option>
-            <option value="Belarus">Беларусь</option>
-        </select><br><br>
-        <span>Интересы:</span><br>
-        <input type="checkbox" name="html" value="HTML">HTML<br>
-        <input type="checkbox" name="js" value="Javascript">Javascript<br>
-        <input type="checkbox" name="php" value="PHP">PHP<br>
-        <input type="checkbox" name="css" value="CSS">CSS<br><br>
-        <span>E-mail:</span>
-        <input type="email" name="email"> <br><br>
-        <span>Password:</span>
-        <input type="password" name="password"> <br><br>
-        <span>Как часто хотите получать уведомления на электронную почту?</span><br>
-        <input type="radio" name="notice" value="everytime" checked>Всегда<br>
-        <input type="radio" name="notice" value="monthly">Ежемесячно<br>
-        <input type="radio" name="notice" value="never">Никогда<br><br><br>
-        <span>Ваше мнение о Codifun:</span><br>
-        <textarea name="opinion" id="about" cols="60" rows="10"></textarea>
-
-
-    </form>
+    <section>
+        <h1 align="center">Форма с личными данными</h1>
+        <div align="center">
+            <canvas id="myCanvas" style="width: 300px; height: 80px; border: 2px solid #a7a3a3">
+            </canvas>
+        </div>
+        <h4 style = "display: inline">Нажмите чтобы вернутся</h4>
+        <a href="../index.html">
+            <svg width="50" height="50">
+                <circle cx="25" cy="25" r="20" stroke="green" stroke-width=4 fill="yellow"/>
+            </svg>
+        </a><br><br>
+        <form action="" method="post">
+            <span>Имя:</span><br>
+            <input type="text" name="name"> <br><br>
+            <span>Фамилия:</span><br>
+            <input type="text" name="surname"> <br><br>
+             <span>Дата рождения:</span>
+            <input type="date" name="date"> <br><br>
+            <span>Страна происхождения:</span>
+            <select name="country" id="country">
+                <option value="Ukraine">Украина</option>
+                <option value="Russia">Россия</option>
+                <option value="Belarus">Беларусь</option>
+            </select><br><br>
+            <span>Интересы:</span><br>
+            <input type="checkbox" name="html" value="HTML">HTML<br>
+            <input type="checkbox" name="js" value="Javascript">Javascript<br>
+            <input type="checkbox" name="php" value="PHP">PHP<br>
+            <input type="checkbox" name="css" value="CSS">CSS<br><br>
+            <span>E-mail:</span>
+            <input type="email" name="email"> <br><br>
+            <span>Password:</span>
+            <input type="password" name="password"> <br><br>
+            <span>Как часто хотите получать уведомления на электронную почту?</span><br>
+            <input type="radio" name="notice" value="everytime" checked>Всегда<br>
+            <input type="radio" name="notice" value="monthly">Ежемесячно<br>
+            <input type="radio" name="notice" value="never">Никогда<br><br><br>
+            <span>Ваше мнение о Codifun:</span><br>
+            <textarea name="opinion" id="about" cols="60" rows="10"></textarea>
+        </form>
+    </section>
+    <footer>
+        <h3 id="demo"></h3>
+    </footer>
     <script>
         var canv = document.getElementById("myCanvas");
         var ctx = canv.getContext('2d');
         ctx.font = "25px Arial";
         ctx.fillText("Hello World", 75, 45);
     </script>
+    <script src="../code.js"></script>
 </body>
 </html>

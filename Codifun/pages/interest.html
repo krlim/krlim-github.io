@@ -2,35 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Codifun</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
-    <h1>Codifun Inspire Me !</h1>
-    <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel nam, iure tempora dolore dolores aperiam sint, est veritatis et ea incidunt expedita illum libero earum qui, hic ex voluptate? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel nam, iure tempora dolore dolores aperiam sint, est veritatis et ea incidunt expedita illum libero earum qui, hic ex voluptate? </p>
+   <header class="header">
+       <h1>Codifun Inspire Me !</h1>
+       <p class="header__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel nam, iure tempora dolore dolores aperiam sint, est veritatis et ea incidunt expedita illum libero earum qui, hic ex voluptate? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vel nam, iure tempora dolore dolores aperiam sint, est veritatis et ea incidunt expedita illum libero earum qui, hic ex voluptate?</p>
+   </header>
+   <nav class="nav">
+        <a class="nav-link" href="../index.html">Главная страница</a>
+        <a class="nav-link" href="interest.html">Интересно о...</a>
+        <a class="nav-link" href="address.html">Адрес</a>
+        <a class="nav-link" href="form.html">Заполните форму</a>
+    </nav>
 
-    <hr>
-    <table width=100%>
-        <tr>
-            <th>Меню</th>
-            <th>Интересно о...</th>
-        </tr>
-        <tr>
-            <td width="10px">
-                <ul>
-                    <li><a href="../index.html">Главная страница</a></li>
-                    <li><a href="interest.html">Интересно о...</a></li>
-                    <li><a href="address.html">Адрес</a></li>
-                    <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
-                </ul>
-            </td>
-            <td width ="500px">
-                <p>Многие из проектов на языке С, существующих сегодня, начинали разрабатываться ещё десятилетия назад. Операционная система UNIX стартовала 1969 году (и писалась на ассемблере), но уже в 1972 была переписана на С. Точнее, это язык С был создан для того, чтобы появилось что-то, на что было бы удобно переписать с ассемблера ядро UNIX и получить чуть более высокоуровневый код, менее зависимый от архитектуры и позволяющий выполнять больше полезной работы на каждую строчку написанного кода. </p>
-                <p>Разработка базы данных Oracle началась в 1977 году (тоже на ассемблере) и тоже была переписана на С в 1983 году. К тому времени это был уже один из самых популярных языков в мире.В 1985 году вышла Windows 1.0. Хотя код операционной системы Windows не является открытым, общеизвестно, что ядро в основном написано на С с небольшими вставками ассемблера. Разработка Linux началась в 1991 году и началась сразу на С. В следующем году она была опубликована под лицензией GPL и использована как часть GNU Operating System, которая и сама начиналась как проект на С и Lisp, так что многие компоненты были написаны на С. Но проекты на С — это не только то, что стартовало десятилетия назад, когда выбор языков, скажем прямо, был достаточно ограничен.</p>
-            </td>
-
-        </tr>
-
-    </table>
+    <section>
+       <div class="row">
+            <article class="column">
+                <h2 class="article__name">Опциональные цепочки и динамические импорты</h2>
+                <h6 class="article__author">Author: Max Lancaster</h6>
+                <p class="article__text">Опциональные цепочки (Optional Chaining) — это, лично для меня, одна из самых восхитительных возможностей стандарта ES2020. Я написал множество программ, в которых эта возможность оказалась бы крайне полезной.</p>
+                <p>Опциональные цепочки позволяют организовать безопасный доступ к глубоко вложенным свойствам объектов без необходимости проверки существования каждого из них. Взглянем на то, как именно работает эта возможность. Динамические импорты (Dynamic Imports) способствуют более эффективной работе приложений. Эта технология позволяет импортировать JS-файлы динамически, в виде модулей, без привлечения дополнительных инструментов. При этом, если модуль не нужен, то он не импортируется. До ES2020 модули импортировались вне зависимости от того, используются ли они приложением или нет.</p>
+                <p>Например, предположим, что нам нужно реализовать функционал загрузки некоего файла в формате PDF.</p>
+            </article>
+            <article class="column">
+                <h2 class="article__name">Проверка значений только на null и undefined</h2>
+                <h6 class="article__author">Author: Max Lancaster</h6>
+                <p class="article__text">Проверка значений только на null и undefined (Nullish Coalescing) — это одна из тех возможностей, которые прямо-таки восхитили меня ещё тогда, когда возможности были на стадии предложений. Я часто сталкивался с необходимостью писать специализированные функции для выполнения соответствующих проверок.</p> <p>Известно, что в JavaScript существуют «ложные» и «истинные» значения. Теперь можно сказать, что к ним добавились и «нулевые» значения. В состав таких значений входят null и undefined. С точки зрения JavaScript «ложными» являются пустые строки, число 0, значения undefined, null, false, NaN. То есть, например, некое выражение для проверки значения на «ложность» сработает и на пустой строке, и на значении undefined, и много ещё на чём. А выражение для проверки значения на предмет того, является ли оно «нулевым», вернёт true только для null и undefined. Может, лично вам эта возможность не кажется такой уж замечательной, но, на самом деле, она очень и очень важна.</p>
+            </article>
+            <article class="column">
+                <h2 class="article__name">Конструкция типа Promise.allSettled</h2>
+                <h6 class="article__author">Author: Max Lancaster</h6>
+                <p class="article__text">Если вам нужно выполнить некое действие только в том случае, когда все промисы успешно разрешились, вы можете воспользоваться методом Promise.all(). Правда, у этого метода есть один недостаток. Метод выдаст ошибку в том случае, если хотя бы один переданный ему промис окажется отклонённым. Это значит, что необходимое действие не будет выполнено до тех пор, пока все промисы не будут успешно разрешены. </p>
+                <p>Возможно, вам это не нужно. Возможно, вас устроит следующий сценарий: «Мне не важен результат. Мне нужно, чтобы код был выполнен после завершения работы всех промисов». В таком случае вам пригодится метод Promise.allSettled(). Соответствующий промис успешно разрешается только после того, как завершится работа других промисов. При этом неважно — успешно или неуспешно они отработали.</p>
+           </article>
+        </div>
+    </section>
+    <footer>
+        <h3 id="demo"></h3>
+    </footer>
+    <script src="../code.js"></script>
 </body>
 </html>
