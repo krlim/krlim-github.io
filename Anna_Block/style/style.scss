@@ -69,3 +69,31 @@ body {
     padding-bottom: 43px;
     margin: 0 auto;
 }
+
+// About
+.box-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 200px;
+    &-item {
+        flex: 0 0 45%;
+        max-width: 45%;
+        position: relative;
+        &:first-child {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__back {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: -108px;
+    }
+    &__vertical {
+        position: absolute;
+        left: 0;
+        writing-mode: vertical-lr;
+    }
+}
