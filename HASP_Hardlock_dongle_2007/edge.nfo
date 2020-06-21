@@ -1,0 +1,114 @@
+           _ _____  ______\    _____     _ _____
+        ._/ \\___/._\      \ _/  __/__._/ \\___/
+        |    __/__|  \__    \   \\    \    __/___.     Living on the EDGE
+        |  _/     :    /    /   _/    /  _/      |
+<-------|__\_______________/|________/|__\_______|----------------------------->
+
+        RELEASE NAME ..... SoftKey Solutions HASP/Hardlock Emulator 2007
+        SUPPLIER ......... Team EDGE
+        CRACKER .......... Team EDGE
+        PROTECTION ....... RSA-512, RC6, MD5, Custom, Obfuscation.
+        RELEASE DATE ..... 15/10/2007
+        SIZE ............. 1 x 5MB
+        URL .............. http://www.neobit.org/
+
+<------------------------------------------------------------------------------>
+
+  PRODUCT DESCRIPTION
+
+                SoftKey Solutions HASP/Hardlock Emulator 2007
+
+   Well this release is something special, cEnginEEr and Team EDGE joined
+   forces to do this one.
+
+   This is a very good commercial dongle emulator, but we do really not
+   like commercial crackers, so we thought it was time to liberate this.
+
+   On its own, this emulator is not worth much, so we include HASP3/HASP4/
+   Hardlock solver that solves to the .dng format utilized by this thing.
+
+   This release featured massive work, over several weeks, solving the 512
+   bits RSA key, debugging the drivers in ring-0, analyzing file formats,
+   coding tools and making it all work together.
+
+                                            / Team EDGE signing off...
+
+   neoBit company has been working in field of reverse engineering since
+   1998 and specializes in making software copies of hardware keys.
+
+   Dongle is a small electronic device responsible for software
+   authorization. Neobit works with following dongle brands only:
+   HASP 3, HASP 4, HASP HL and HardLock by Aladdin Knowledge Systems,
+   Sentinel SuperPRO/PRO/CPlus/Scribe by Rainbow (now Safe-Net Inc).
+
+   There are many disadvantages and threats for dongles:
+
+    - Dongle is a piece of hardware which can be lost.
+
+    - There's a large market for second hand software and dongles.
+      That's the reason of great quantity of dongle thefts.
+
+    - Fired workers or competitors steals hardware keys making harm
+      to your business.
+
+    - As any electronic device, dongle can die.
+
+   Main features of Dongle emulator from neoBit:
+
+    - 100% software emulation of HASP3, HASP4, Hardlock FAST E-Y-E,
+      Rainbow Sentinel SuperPRO, Pro, CPlus, Scribe.
+
+    - Highly reliable code tested by thousands customers.
+
+    - Transparent for other dongles.
+
+    - Single and Unlimited licenses.
+
+    - Pro version with advanced license control.
+
+    - Easy-to-use user-friendly interface.
+
+    - Works under Microsoft Windows 95 / 98 / ME / NT / 2000 / XP / 2003.
+
+<------------------------------------------------------------------------------>
+
+  INSTALLATION INSTRUCTIONS
+
+   1. Unzip, Unrar and run HASPHL2007.exe
+
+   2. Make sure you have the latest HASP dongle drivers installed and
+      the original HASP key connected to a LPT or USB port.
+
+   3. Press "INSTALL" button and if installation was successful Driver
+      status window will be changed to "Status : driver is installed"
+
+   4. Now you need to open "Emulator" tab, Then you press "Start Service"
+      button. If everything is ok you'll see "HASP/HARDLOCK Emulator Service
+      is running"
+
+   5. To find your key it is necessary to start protected software.
+
+   6. Open "DUMPER" tab. HASP/HL Dongles window shows logged HASP
+      passwords. There can be up to 10 different passwords but it
+      doesn't mean that all dongles are connected to computer.
+
+      When you press "DUMP" button Dumper will try to read all of Logged
+      dongles and save all dump files.
+
+      Dump files are stored in folder containing HASPHL2006.exe and have
+      ".DMP" extension.
+
+   7. Now run our EDGEHASP.EXE tool, located in the EDGE dir to solve your
+      dongle dump, if everything is ok it will output a .DNG file.
+
+   8. Open "DONGLES" tab and press the "Load dump" button.
+
+   9. Enjoy!
+
+   PS. Sentinel emulator coming soon!
+
+<------------------------------------------------------------------------------>
+
+  WE ARE DEDICATED TO QUALITY, NOT QUANTITY, AND WE ARE DOING IT FOR THE LULZ!
+
+<------------------------------------------------------------------------------>
